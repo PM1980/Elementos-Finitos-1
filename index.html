@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Element Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6; /* Default line height for body */
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #e0e0e0; /* Lighter gray tone */
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000; /* This property is not necessary anymore but kept for potential layering */
+        }
+        header h1 {
+            line-height: 1.2; /* Reduced line height for the header title */
+        }
+        header p {
+            line-height: 1.2; /* Reduced line height for the header subtitle */
+        }
+        h2, h3, h4 {
+            color: #2c3e50;
+            text-align: justify; /* Justify headings */
+        }
+        p {
+            text-align: justify; /* Justify paragraphs */
+        }
+        .course-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-content {
+            padding-top: 70px; /* Space for potential fixed header, can be removed */
+            margin-top: -70px; /* Pull content up to compensate for padding */
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            header, footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagem_curso_mef.png" alt="Curso de Elementos Finitos" class="course-image">
+        <h1>Método dos Elementos Finitos 01</h1>
+        <p>Um curso introdutório sobre o método dos elementos finitos e suas aplicações. Material baseado nas aulas/anotações do curso Elementos Finitos 1 da Universidade Federal de Pernambuco - UFPE, Programa de Pós-Graduação em Engenharia Civil (PPGEC). Contato: prof. Paulo Marcelo Vieira Ribeiro (paulo.vribeiro@ufpe.br). Versão: 10/2024.</p>
+    </header>
+
+    <main>
+        <section id="overview" class="section">
+            <div class="section-content">
+                <h2>Visão geral do curso</h2>
+                <p>Bem-vindo ao curso de elementos finitos. Esse é um curso introdutório, que apresenta o conceito e as bases teóricas do método, além da implementação computacional e aplicações práticas. O curso é destinado a alunos de graduação, pós-graduação e profissionais com interesse em métodos numéricos. Os pré-requisitos incluem noções de cálculo diferencial e integral, e o conhecimento básico de programação.</p>
+            </div>
+        </section>
+
+        <section id="structure" class="section">
+            <div class="section-content">
+                <h2>Conteúdo do curso</h2>
+                <ul>
+                    <li><a href="#intro">Introdução ao Método dos Elementos Finitos</a></li>
+                    <li><a href="#math-foundations">Primeiros desenvolvimentos matemáticos e o uso do computador</a></li>
+                    <li><a href="#multiple-elements">Generalização para múltiplos elementos</a></li>
+                    <li><a href="#weak-form">A forma fraca e a solução de problemas de ordem superior</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="intro" class="section">
+            <div class="section-content">
+                <h3>Aspectos introdutórios do Método dos Elementos Finitos (MEF) </h3>
+                <p> Aqui são apresentados os primeiros tópicos relacionados a métodos aproximados e às particularidades do Método dos Elementos Finitos.</p>
+                <h4>Principais tópicos:</h4>
+                <ul>
+                    <li>O que é um método numérico/aproximado</li>
+                    <li>Exemplos de aproximações na engenharia</li>
+                    <li>Conceitos básicos do MEF</li>
+                    <li>Os primeiros exemplos</li>
+                    <li>Visão geral dos pré-requisitos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="math-foundations" class="section">
+            <div class="section-content">
+                <h3>Primeiros desenvolvimentos matemáticos e o uso do computador</h3>
+                <p>Aplicação do método dos resíduos ponderados na solução de equações diferenciais.</p>
+            </div>
+        </section>
+
+        <section id="multiple-elements" class="section">
+            <div class="section-content">
+                <h3>Generalização para múltiplos elementos</h3>
+                <p>Os primeiros passos para a solução de equações diferenciais com múltiplos elementos.</p>
+            </div>
+        </section>
+
+        <section id="weak-form" class="section">
+            <div class="section-content">
+                <h3>A forma fraca e a solução de problemas de ordem superior</h3>
+                <p>Uma forma alternativa para a solução numérica de equações diferenciais.</p>
+            </div>
+        </section>
+
+        <section id="material" class="section">
+            <div class="section-content">
+                <h2>Companion Material</h2>
+                <ul>
+                    <li><a href="#lecture-notes">Lecture Notes</a></li>
+                    <li><a href="#problem-sets">Problem Sets</a></li>
+                    <li><a href="#video-tutorials">Video Tutorials</a></li>
+                    <li><a href="#software-guides">Software Guides</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="lecture-notes" class="section">
+            <div class="section-content">
+                <h3>Lecture Notes</h3>
+                <p>Access comprehensive lecture notes for each class session.</p>
+            </div>
+        </section>
+
+        <section id="problem-sets" class="section">
+            <div class="section-content">
+                <h3>Problem Sets</h3>
+                <p>Explore various problem sets to test your understanding of the course material.</p>
+            </div>
+        </section>
+
+        <section id="video-tutorials" class="section">
+            <div class="section-content">
+                <h3>Video Tutorials</h3>
+                <p>Watch video tutorials to reinforce your learning.</p>
+            </div>
+        </section>
+
+        <section id="software-guides" class="section">
+            <div class="section-content">
+                <h3>Software Guides</h3>
+                <p>Get guides on how to use software relevant to finite element analysis.</p>
+            </div>
+        </section>
+
+        <section id="case-studies" class="section">
+            <div class="section-content">
+                <h3>Case Studies</h3>
+                <p>Review case studies demonstrating the application of finite element analysis in real-world scenarios.</p>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="section-content">
+                <h2>Resources</h2>
+                <p>Additional resources to supplement your learning experience:</p>
+                <ul>
+                    <li><a href="#textbooks">Recommended Textbooks</a></li>
+                    <li><a href="#software">FEA Software</a></li>
+                    <li><a href="#online-resources">Online Resources</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="textbooks" class="section">
+            <div class="section-content">
+                <h3>Recommended Textbooks</h3>
+                <p>A list of recommended textbooks for further reading.</p>
+            </div>
+        </section>
+
+        <section id="software" class="section">
+            <div class="section-content">
+                <h3>FEA Software</h3>
+                <p>Information on various FEA software packages and their applications.</p>
+            </div>
+        </section>
+
+        <section id="online-resources" class="section">
+            <div class="section-content">
+                <h3>Online Resources</h3>
+                <p>Explore online resources for learning more about finite element methods.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Curso de Elementos Finitos. Todos os direitos reservados.</p>
+    </footer>
+</

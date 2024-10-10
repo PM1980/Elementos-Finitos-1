@@ -1,16 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Page</title>
+    <title>Parte 1 - Aspectos introdutórios do Método dos Elementos Finitos (MEF)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #e6f7ff; /* Very light blue tone */
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            line-height: 1.2;
+        }
+        header p {
+            line-height: 1.2;
+        }
+        .course-image {
+            max-width: 100%; /* Increased the image size by 100% */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        p, h2, h3 {
+            text-align: justify;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .spacer {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="rao_exhaustion_circle.png" alt="Exhaustion Circle Logo" style="width:150px; display:block; margin:auto;">
+        <img src="rao_exhaustion_circle.png" alt="Exhaustion Circle" class="course-image">
+        <h1>Parte 1 - Aspectos introdutórios do Método dos Elementos Finitos (MEF)</h1>
+        <p>Material introdutório sobre o Método dos Elementos Finitos. Apresentação dos conceitos básicos e aplicabilidade.</p>
+        <p><a href="https://1drv.ms/b/s!Ajr7_nnFcX67iegXHtM5uwIx2Yy67w?e=bn9iVH">Material Introdutório da parte 1 (slides)</a></p>
     </header>
-    <h1>Parte 1 - Aspectos introdutórios do Método dos Elementos Finitos (MEF)</h1>
-    <a href="https://1drv.ms/b/s!Ajr7_nnFcX67iegXHtM5uwIx2Yy67w?e=bn9iVH">Material Introdutório da parte 1 (slides)</a>
-    <a href="index.html">Voltar ao início do curso</a>
+
+    <!-- Seção 1 -->
+    <section>
+        <h2>1. A Ideia Básica de uma Aproximação</h2>
+
+        <h3>Conceito Fundamental</h3>
+        <ul>
+            <li>Simplificar problemas complicados através de aproximações mais simples.</li>
+            <li>Utilização do método de exaustão para aproximação progressiva.</li>
+        </ul>
+
+        <h3>Exemplo Geométrico</h3>
+        <ul>
+            <li>Demonstração da aproximação de áreas de figuras complexas usando formas geométricas simples.</li>
+            <li>Conclusão: Maior número de elementos resulta em melhor aproximação.</li>
+        </ul>
+    </section>
+
+    <!-- Seção 2 -->
+    <section>
+        <h2>2. A Aproximação de uma Equação Diferencial</h2>
+
+        <h3>Método das Diferenças Finitas (MDF)</h3>
+        <ul>
+            <li>Introdução ao MDF como técnica de aproximação.</li>
+            <li>Explicação da aproximação de derivadas de primeira ordem.</li>
+        </ul>
+
+        <h3>Aplicação em Problema Bidimensional</h3>
+        <ul>
+            <li>Uso da equação de Laplace como exemplo (problema de distribuição de temperatura em uma placa).</li>
+            <li>Discretização do domínio contínuo em pontos.</li>
+        </ul>
+
+        <h3>Processo de Solução</h3>
+        <ol>
+            <li>Aplicação das diferenças finitas centrais de ordem 2.</li>
+            <li>Substituição da equação diferencial por um sistema de equações algébricas.</li>
+            <li>Solução do sistema discretizado.</li>
+        </ol>
+
+        <h3>Implementação Computacional</h3>
+        <p>Menção ao uso do MATLAB para solução do sistema de equações lineares.</p>
+        <p><a href="https://matlab.mathworks.com/">Matlab Online - gratuito </a></p>
+        <p><a href="https://www.mathworks.com/products/matlab/student.html">Matlab Desktop - versão paga, mas a um preço acessível para estudantes </a></p>
+
+
+    </section>
+
+    <!-- Seção 3 -->
+    <section>
+        <h2>3. A Ideia Básica do Método dos Elementos Finitos (MEF)</h2>
+
+        <h3>Aplicações do MEF</h3>
+        <ul>
+            <li>Análise de tensões</li>
+            <li>Distribuição de temperatura</li>
+            <li>Problemas de fluxo</li>
+        </ul>
+
+        <h3>Evolução e Acessibilidade</h3>
+        <ul>
+            <li>Diminuição das dificuldades na elaboração de códigos MEF.</li>
+            <li>Destaque para a geração automática de malhas.</li>
+        </ul>
+
+        <h3>Exemplos Práticos</h3>
+        <ol>
+            <li>Malha gerada pelo software GiD para análise de treliça espacial.</li>
+            <li>Análise estática de barragem.</li>
+            <li>Análise modal de viga.</li>
+        </ol>
+
+        <h3>Eficiência no Desenvolvimento</h3>
+        <p>Ênfase no curto tempo de desenvolvimento (menos de 2 meses) para aplicações complexas por alunos de graduação.</p>
+    </section>
+
+    <!-- Conclusão -->
+    <section>
+        <h2>Conclusões Implícitas</h2>
+        <ol>
+            <li>O MEF é uma ferramenta poderosa para resolver problemas complexos de engenharia.</li>
+            <li>A evolução das ferramentas computacionais tornou o MEF mais acessível e eficiente.</li>
+            <li>Estudantes podem desenvolver aplicações significativas em um período relativamente curto.</li>
+        </ol>
+    </section>
+
+    
+    <footer>
+        <div class="spacer"></div> <!-- Spacer added between links -->
+        <p><a href="index.html">Voltar ao início do curso</a></p>
+        <p>Elementos Finitos 1 - Versão: 10/2024</p>
+    </footer>
 </body>
 </html>
